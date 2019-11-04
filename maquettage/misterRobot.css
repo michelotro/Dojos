@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width : 100vw;
+}
+.div1{
+    height : 15vh;
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tete{
+    width: 10vw;
+    height: 15vh;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.oeil{
+    width: 2vw;
+    height: 4vh;
+    background-color: rgb(250, 24, 250);
+    border-radius: 50%;
+    margin-top: 2vh;  
+}
+.bouche{
+    width: 5vw;
+    height: 1vh;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.joue{
+    width: 0.8vw;
+    height: 1vh;
+    background-color: rgb(122, 115, 115);
+}
+.div2{
+    height : 3vh;
+    background-color: #b2b2b2;
+    display: flex;
+    justify-content: center;
+}
+.cou{
+    height:3vh;
+    width: 3vw;
+    background-color:rgba(250, 250, 250, 0.8);
+}
+.div3{
+    height : 44vh;
+    background-color: #999999;
+    display: flex;
+    justify-content: center;
+    perspective: 1500px;
+}
+.bras{
+    height : 44vh;
+    width: 5vw;
+    background-color: #e0e0e0;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    animation : heureux 6s infinite ;
+    perspective: preserve 3d ;
+}
+@keyframes heureux{
+    
+    0%, 30%{
+        transform-origin: top;
+    }  
+    30%{
+        transform: rotatex(180deg);
+    }
+    61%, 99%{
+        transform-origin: top;  
+        transform: rotatex(0deg);
+}
+}
+.corps{
+    height : 44vh;
+    width: 15vw;
+    background-color: #e0e0e0;
+}
+.div4{
+    height : 34vh;
+    background-color: #7f7f7f;
+    display: flex;
+    justify-content: center;
+}
+.jambe{
+    height : 34vh;
+    width: 6vw;
+    background-color: #d9d9d9;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.div5{
+    height : 4vh;
+    background-color: #7f7f7f;
+    display: flex;
+    justify-content: center;
+}
+.pied{
+    height : 3vh;
+    width: 6vw;
+    background-color: #bfbfbf;
+    margin-right: 1vw;
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
